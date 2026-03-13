@@ -1,5 +1,13 @@
 ### Project Structure
 
+# OrderService
+
+A robust order management microservice built with **.NET**, following **Clean Architecture** and **Domain-Driven Design (DDD)** principles.
+
+---
+
+## 🏗️ Project Structure
+
 ```text
 OrderService
 │
@@ -32,3 +40,19 @@ Domain	        Business rules
 Application	    Use cases
 Infrastructure	RabbitMQ / MassTransit
 API	            HTTP endpoints
+
+Example flow:
+
+HTTP Request
+   ↓
+Controller (API)
+   ↓
+Application Command
+   ↓
+Domain Logic
+   ↓
+Domain Event Created
+   ↓
+Infrastructure publishes event
+   ↓
+RabbitMQ
