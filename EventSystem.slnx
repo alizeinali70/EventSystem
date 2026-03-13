@@ -1,1 +1,10 @@
-<Solution />
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="Services/InventoryService/InventoryService.csproj" Id="ce7c5fb7-57b1-4cda-9030-31fe9a1daa25" />
+  <Project Path="Services/NotificationService/NotificationService.csproj" Id="0ba032c7-477f-41dd-a1a8-13d0a36088af" />
+  <Project Path="Services/OrderService/OrderService.csproj" Id="b2eccb3f-a641-4c16-9fce-f5d87089bf4e" />
+  <Project Path="Shared.Contracts/Shared.Contracts.csproj" Id="8553a158-fe17-4842-9737-e8a22bc85fd1" />
+</Solution>
