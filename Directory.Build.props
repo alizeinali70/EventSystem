@@ -1,5 +1,10 @@
 ﻿<Project>
 	<PropertyGroup>
+		<CompanyPrefix>EventSystem</CompanyPrefix>
+
+		<RootNamespace>$(CompanyPrefix).$(MSBuildProjectName)</RootNamespace>
+		<AssemblyName>$(CompanyPrefix).$(MSBuildProjectName)</AssemblyName>
+		
 		<TargetFramework>net10.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -9,6 +14,6 @@
 		<CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
 
-		<NoWarn>$(NoWarn);CA1062</NoWarn>
+		<NoWarn>$(NoWarn);CA1716</NoWarn>
 	</PropertyGroup>
 </Project>

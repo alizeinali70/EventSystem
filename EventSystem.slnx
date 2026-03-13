@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/">
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />
+    <File Path="docker-compose.yml" />
   </Folder>
   <Project Path="Services/InventoryService/InventoryService.csproj" Id="ce7c5fb7-57b1-4cda-9030-31fe9a1daa25" />
   <Project Path="Services/NotificationService/NotificationService.csproj" Id="0ba032c7-477f-41dd-a1a8-13d0a36088af" />
