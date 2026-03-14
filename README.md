@@ -8,7 +8,49 @@ A robust order management microservice built with **.NET**, following **Clean Ar
 
 ## 🏗️ Project Structure
 
+
 ```text
+
+event-driven-dotnet-angular
+│
+├── backend
+│   │
+│   ├── services
+│   │   │
+│   │   ├── OrderService
+│   │   │   ├── Controllers
+│   │   │   ├── Entities
+│   │   │   ├── Data
+│   │   │   ├── Events
+│   │   │   └── Program.cs
+│   │   │
+│   │   ├── InventoryService
+│   │   │   ├── Consumers
+│   │   │   └── Program.cs
+│   │   │
+│   │   ├── NotificationService
+│   │   │   ├── Consumers
+│   │   │   └── Program.cs
+│   │
+│   ├── shared
+│   │   └── Contracts
+│   │       └── OrderCreatedEvent.cs
+│   │
+│   └── docker-compose.yml
+│
+└── frontend
+    │
+    └── angular-app
+        ├── src
+        │   ├── app
+        │   │   ├── services
+        │   │   ├── components
+        │   │   └── models
+        │   └── environments
+        │
+        └── package.json
+		
+		
 OrderService
 │
 ├── Domain
@@ -56,3 +98,16 @@ Domain Event Created
 Infrastructure publishes event
    ↓
 RabbitMQ
+
+
+EventSystem.Orders/
+├── Internal/                <-- Everything here is 'internal'
+│   ├── Controllers/         
+│   │   └── OrdersController.cs (internal)
+│   ├── Domain/
+│   └── EventHandlers/       <-- Responds to 'PaymentSucceeded'
+├── Contracts/               <-- Everything here is 'public'
+│   ├── IntegrationEvents/   
+│   │   └── OrderCreated.cs
+│   └── DTOs/
+

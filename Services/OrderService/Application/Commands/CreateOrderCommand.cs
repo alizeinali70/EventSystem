@@ -1,6 +1,6 @@
 ﻿namespace EventSystem.OrderService.Application.Commands;
 
-public record CreateOrderCommand
+internal sealed record CreateOrderCommand
 (
     string ProductName,
     int Quantity

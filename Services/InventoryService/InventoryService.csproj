@@ -5,11 +5,9 @@
     <PackageReference Include="MassTransit.RabbitMQ" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
   </ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Domain\" />
-		<Folder Include="Application\" />
-		<Folder Include="Infrastructure\" />
-		<Folder Include="Api\" />
-	</ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared.Contracts\Shared.Contracts.csproj" />
+  </ItemGroup>
+	
 </Project>

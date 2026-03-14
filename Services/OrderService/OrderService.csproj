@@ -7,8 +7,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Infrastructure\" />
-		<Folder Include="Api\" />
+	  <ProjectReference Include="..\..\Shared.Contracts\Shared.Contracts.csproj" />
 	</ItemGroup>
 
 </Project>

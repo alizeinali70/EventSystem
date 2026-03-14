@@ -1,6 +1,6 @@
 ﻿namespace EventSystem.OrderService.Application.Interfaces;
 
-public interface IEventPublisher
+internal interface IEventPublisher
 {
     Task PublishOrderCreatedAsyn(Guid orderId, string product, int quantity);
 }

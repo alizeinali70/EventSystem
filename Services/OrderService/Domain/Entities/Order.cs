@@ -1,6 +1,6 @@
 ﻿namespace EventSystem.OrderService.Domain.Entities;
 
-public class Order
+internal sealed class Order
 {
     public Guid Id { get; private set; }
     public string ProductName { get; private set; }
@@ -8,7 +8,7 @@ public class Order
 
     public Order(string productName,int quantity)
     {
-        Id = new Guid();
+        Id = Guid.NewGuid(); 
         ProductName = productName;
         Quantity = quantity;
     }
