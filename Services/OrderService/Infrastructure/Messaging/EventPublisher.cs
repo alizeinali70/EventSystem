@@ -6,7 +6,7 @@ namespace EventSystem.OrderService.Infrastructure.Messaging
 {
     internal sealed class EventPublisher(IPublishEndpoint publishEndpoint) : IEventPublisher
     {        
-        public async Task PublishOrderCreatedAsyn(Guid orderId, string product, int quantity)
+        public async Task PublishOrderCreatedAsync(Guid orderId, string product, int quantity)
         {
            await publishEndpoint.Publish(new OrderCreatedEvent(
                 OrderId: orderId,

@@ -2,5 +2,5 @@
 
 internal interface IEventPublisher
 {
-    Task PublishOrderCreatedAsyn(Guid orderId, string product, int quantity);
+    Task PublishOrderCreatedAsync(Guid orderId, string product, int quantity);
 }

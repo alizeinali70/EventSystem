@@ -3,5 +3,7 @@
 internal sealed record CreateOrderCommand
 (
     string ProductName,
-    int Quantity
+    int Quantity,
+    decimal Price,
+    DateTime CreatedAt
     );
